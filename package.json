@@ -1,0 +1,20 @@
+{
+  "name": "webpack-presentation",
+  "version": "1.0.0",
+  "description": "~",
+  "main": "~",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "~"
+  },
+  "keywords": [
+    "~"
+  ],
+  "author": "~",
+  "license": "~",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "angular-ui-router": "^0.2.15"
+  }
+}
