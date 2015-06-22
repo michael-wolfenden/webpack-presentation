@@ -1,9 +1,10 @@
-(function() {
-    'use strict';
+'use strict';
 
-    angular.module('app', [
-        'ui.router',
+var angular = require('angular');
+var router = require('angular-ui-router');
+var dashboard = require('./dashboard/dashboard.module');
 
-        'app.dashboard'
-    ]);
-})();
+angular.module('app', [
+    router,
+    dashboard.name
+]);

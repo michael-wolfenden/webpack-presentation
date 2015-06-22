@@ -1,20 +1,26 @@
 {
-  "name": "webpack-presentation",
-  "version": "1.0.0",
-  "description": "~",
-  "main": "~",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "~"
-  },
-  "keywords": [
-    "~"
-  ],
-  "author": "~",
-  "license": "~",
-  "dependencies": {
-    "angular": "^1.4.1",
-    "angular-ui-router": "^0.2.15"
-  }
+    "name": "webpack-presentation",
+    "version": "1.0.0",
+    "description": "~",
+    "main": "~",
+    "scripts": {
+        "development": "webpack --config webpack.development.config.js --progress --colors"
+    },
+    "repository": {
+        "type": "git",
+        "url": "~"
+    },
+    "keywords": [
+        "~"
+    ],
+    "author": "~",
+    "license": "~",
+    "dependencies": {
+        "angular": "^1.4.1",
+        "angular-ui-router": "^0.2.15"
+    },
+    "devDependencies": {
+        "node-libs-browser": "^0.5.2",
+        "webpack": "^1.9.11"
+    }
 }

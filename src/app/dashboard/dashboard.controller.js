@@ -1,12 +1,10 @@
-(function() {
-    'use strict';
+'use strict';
 
-    angular
-        .module('app.dashboard')
-        .controller('DashboardController', DashboardController);
+function DashboardController($log) {
+    var vm = this;
+    vm.message = 'Message from Dashboard Controller';
 
-    function DashboardController() {
-        var vm = this;
-        vm.message = 'Hello from Dashboard Controller';
-    }
-})();
+    $log.log('DashboardController activated:' + vm.message);
+}
+
+module.exports = DashboardController;
