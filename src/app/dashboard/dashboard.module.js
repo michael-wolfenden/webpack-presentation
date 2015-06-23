@@ -1,13 +1,13 @@
 'use strict';
 
-var angular = require('angular');
+import angular from 'angular';
 
-var dashboardController = require('./dashboard.controller');
-var dashboardRoute = require('./dashboard.route');
+import DashboardController from './dashboard.controller';
+import dashboardRoute from './dashboard.route';
 
-var dashboardModule = angular
+let dashboardModule = angular
     .module('app.dashboard', [])
-    .controller('DashboardController', dashboardController)
+    .controller('DashboardController', DashboardController)
     .config(dashboardRoute);
 
-module.exports = dashboardModule;
+export default dashboardModule;

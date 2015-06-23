@@ -1,10 +1,14 @@
 'use strict';
 
-function DashboardController($log) {
-    var vm = this;
-    vm.message = 'Message from Dashboard Controller';
+class DashboardController {
+    constructor($log, $timeout) {
+        this.message = 'Message from Dashboard Controller';
+        $log.log(`DashboardController activated: ${this.message}`);
 
-    $log.log('DashboardController activated:' + vm.message);
+        $timeout(() => {
+            this.message = 'Message from Dashboard Controller - After timeout';
+        }, 3000);
+    }
 }
 
-module.exports = DashboardController;
+export default DashboardController;

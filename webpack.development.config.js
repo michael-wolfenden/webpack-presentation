@@ -17,7 +17,7 @@ var webpack = {
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'eslint'
+            loader: 'babel!eslint'
         }]
     },
     plugins: [
