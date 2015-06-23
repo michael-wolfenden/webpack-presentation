@@ -21,6 +21,7 @@
         "angular-ui-router": "^0.2.15"
     },
     "devDependencies": {
+        "eslint-loader": "^0.14.0",
         "html-webpack-plugin": "^1.5.2",
         "node-libs-browser": "^0.5.2",
         "webpack": "^1.9.11",

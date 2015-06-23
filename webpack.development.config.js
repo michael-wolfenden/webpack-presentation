@@ -13,6 +13,13 @@ var webpack = {
         filename: 'bundle.js',
         path: config.paths.buildDir
     },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'eslint'
+        }]
+    },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
