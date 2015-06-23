@@ -1,5 +1,7 @@
 'use strict';
 
+import './dashboard.less';
+
 import angular from 'angular';
 
 import DashboardController from './dashboard.controller';

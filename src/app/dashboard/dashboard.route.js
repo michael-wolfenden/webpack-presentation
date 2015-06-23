@@ -7,7 +7,7 @@ function dashboardRoute($stateProvider) {
             url: '/dashboard',
             controller: 'DashboardController as vm',
             template:
-`<div>
+`<div class="dashboard">
     <h1>{{vm.message}}</h1>
 </div>`
         });

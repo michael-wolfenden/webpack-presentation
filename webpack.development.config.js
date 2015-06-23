@@ -18,6 +18,12 @@ var webpack = {
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'ng-annotate!babel!eslint'
+        }, {
+            test: /\.less$/,
+            loader: 'style!css!less'
+        }, {
+            test: /\.(otf|eot|svg|ttf|woff|woff2)/,
+            loader: 'file-loader'
         }]
     },
     plugins: [
