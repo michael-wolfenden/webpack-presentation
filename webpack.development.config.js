@@ -5,7 +5,10 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var webpack = {
-    entry: config.paths.entryFile,
+    entry: [
+        'webpack/hot/dev-server',
+        config.paths.entryFile
+    ],
     output: {
         filename: 'bundle.js',
         path: config.paths.buildDir
@@ -14,7 +17,8 @@ var webpack = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: config.paths.index,
-            inject: true
+            inject: true,
+            devServer: 'http://localhost:8080/webpack-dev-server.js'
         })
     ]
 };

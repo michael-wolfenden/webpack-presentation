@@ -4,7 +4,8 @@
     "description": "~",
     "main": "~",
     "scripts": {
-        "development": "webpack --config webpack.development.config.js --progress --colors"
+        "development-build": "webpack --config webpack.development.config.js --progress --colors",
+        "development": "webpack-dev-server --config webpack.development.config.js --progress --colors --hot"
     },
     "repository": {
         "type": "git",
@@ -22,6 +23,7 @@
     "devDependencies": {
         "html-webpack-plugin": "^1.5.2",
         "node-libs-browser": "^0.5.2",
-        "webpack": "^1.9.11"
+        "webpack": "^1.9.11",
+        "webpack-dev-server": "^1.9.0"
     }
 }

@@ -20,5 +20,9 @@
     <div class="container">
         <div ui-view></div>
     </div>
+
+    {% if (o.htmlWebpackPlugin.options.devServer) { %}
+    <script src="{%=o.htmlWebpackPlugin.options.devServer%}"></script>
+    {% } %}
 </body>
 </html>
