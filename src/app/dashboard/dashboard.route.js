@@ -1,15 +1,14 @@
 'use strict';
 
+import dashboardTemplate from './dashboard.html';
+
 /* @ngInject */
 function dashboardRoute($stateProvider) {
     $stateProvider
         .state('dashboard', {
             url: '/dashboard',
             controller: 'DashboardController as vm',
-            template:
-`<div class="dashboard">
-    <h1>{{vm.message}}</h1>
-</div>`
+            template: dashboardTemplate
         });
 }
 

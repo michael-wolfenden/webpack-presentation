@@ -23,7 +23,10 @@ var webpack = {
             loader: 'style!css!less'
         }, {
             test: /\.(otf|eot|svg|ttf|woff|woff2)/,
-            loader: 'file-loader'
+            loader: 'file'
+        }, {
+            test: /\.html$/,
+            loader: 'html'
         }]
     },
     plugins: [
