@@ -1,5 +1,6 @@
 'use strict';
 
+/* @ngInject */
 class DashboardController {
     constructor($log, $timeout) {
         this.message = 'Message from Dashboard Controller';
