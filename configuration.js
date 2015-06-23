@@ -12,7 +12,11 @@ var exports = {
         entryFile: entryFile,
         buildDir: buildDir,
         index: index
-    }
+    },
+    vendorsToBundleSeperately: [
+        'angular',
+        'angular-ui-router'
+    ]
 };
 
 module.exports = exports;

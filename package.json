@@ -5,7 +5,9 @@
     "main": "~",
     "scripts": {
         "development-build": "webpack --config webpack.development.config.js --progress --colors",
-        "development": "webpack-dev-server --config webpack.development.config.js --progress --colors --hot"
+        "development": "webpack-dev-server --config webpack.development.config.js --progress --colors --hot",
+        "preproduction": "rimraf build",
+        "production": "webpack -p --config webpack.production.config.js --progress --colors"
     },
     "repository": {
         "type": "git",
@@ -25,6 +27,7 @@
         "babel-loader": "^5.1.4",
         "css-loader": "^0.15.1",
         "eslint-loader": "^0.14.0",
+        "extract-text-webpack-plugin": "^0.8.2",
         "file-loader": "^0.8.4",
         "html-loader": "^0.3.0",
         "html-webpack-plugin": "^1.5.2",
@@ -32,6 +35,7 @@
         "less-loader": "^2.2.0",
         "ng-annotate-loader": "0.0.4",
         "node-libs-browser": "^0.5.2",
+        "rimraf": "^2.4.0",
         "style-loader": "^0.12.3",
         "webpack": "^1.9.11",
         "webpack-dev-server": "^1.9.0"
