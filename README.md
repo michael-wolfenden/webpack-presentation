@@ -2,6 +2,14 @@
 
 Sample of using webpack to build a sample angular / bootstrap application
 
+## Features
+* less compilation
+* automatic angular dependency injection annotation
+* linting using [ESlint](http://eslint.org/)
+* builds seperate app / vendor bundles for production
+* live reload in development
+* No gulp / grunt / bower required
+
 ### Getting started
 
     > npm install
