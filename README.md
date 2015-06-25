@@ -1,6 +1,6 @@
 # webpack-presentation
 
-Sample of using webpack to build a sample angular / boostrap application
+Sample of using webpack to build a sample angular / bootstrap application
 
 ### Getting started
 
